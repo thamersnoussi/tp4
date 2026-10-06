@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'achat</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 350px;
+            margin: 20px auto;
+        }
+
+        fieldset {
+            margin-bottom: 5px;
+        }
+
+        legend {
+            font-weight: normal;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 120px;
+        }
+
+        textarea {
+            width: 120px;
+            height: 65px;
+        }
+
+        .carte {
+            border: 1px solid #aaa;
+            padding: 5px;
+        }
+
+        button {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    
+    <fieldset>
+        <legend>Votre identité</legend>
+
+        <table>
+            <tr>
+                <td>1. Nom</td>
+                <td>
+                    <input type="text" placeholder="Prénom et nom">
+                </td>
+            </tr>
+
+            <tr>
+                <td>2. Email</td>
+                <td>
+                    <input type="email" placeholder="exemple@domaine.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td>3. Téléphone</td>
+                <td>
+                    <input type="tel" placeholder="par ex : +33755000000">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    
+    <fieldset>
+        <legend>Adresse de livraison</legend>
+
+        <table>
+            <tr>
+                <td>1. Adresse</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2. Code postal</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>3. Pays</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    
+    <fieldset>
+        <legend>informations CB</legend>
+
+        <table>
+            <tr>
+                <td>1.</td>
+                <td>
+                    <fieldset class="carte">
+                        <legend>Type de carte bancaire</legend>
+
+                        <table>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <input type="radio"
+                                           name="carte"
+                                           value="visa">
+                                    VISA
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2.</td>
+                                <td>
+                                    <input type="radio"
+                                           name="carte"
+                                           value="amex">
+                                    AmEx
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <input type="radio"
+                                           name="carte"
+                                           value="mastercard">
+                                    Mastercard
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2. N° de carte</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>3. Code de sécurité</td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td>4. Nom du porteur</td>
+                <td>
+                    <input type="text"
+                           placeholder="Même nom que sur la carte">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+    <fieldset>
+        <button type="submit">J'achète !</button>
+    </fieldset>
+
+</form>
+
+</body>
+</html>

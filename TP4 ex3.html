@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Formulaire d'inscription HTML5</title>
+</head>
+<body>
+
+    <h2>Formulaire d'inscription</h2>
+
+    <form action="" method="post">
+        
+        
+        <p>
+            <label for="cin">Numéro de la CIN :</label><br>
+            <input type="text" id="cin" name="cin" pattern="[0-9]{8}" placeholder="Ex: 12345678" required>
+        </p>
+
+        
+        <p>
+            <label for="nom_prenom">Nom et prénom :</label><br>
+            <input type="text" id="nom_prenom" name="nom_prenom" maxlength="40" placeholder="Votre nom et prénom" required>
+        </p>
+
+        
+        <p>
+            <label for="date_heure_naissance">Date et heure de naissance :</label><br>
+            <input type="datetime-local" id="date_heure_naissance" name="date_heure_naissance" required>
+        </p>
+
+        
+        <p>
+            <label for="moyenne">Intervalle de la moyenne de l'année dernière (0 à 20) :</label><br>
+            <input type="range" id="moyenne" name="moyenne" min="0" max="20" step="0.5" value="10">
+        </p>
+
+        
+        <p>
+            <label for="date_inscription">Date d'inscription :</label><br>
+            <input type="date" id="date_inscription" name="date_inscription" required>
+        </p>
+
+        
+        <p>
+            <label for="parcours_niveau">Parcours à suivre et niveau :</label><br>
+            <select id="parcours_niveau" name="parcours_niveau" required>
+                <option value="">-- Sélectionnez votre parcours et niveau --</option>
+                
+                <optgroup label="TC (Tronc Commun)">
+                    <option value="TC-1">1ère année TC</option>
+                </optgroup>
+
+                <optgroup label="SEM">
+                    <option value="SEM-1">1ère année SEM</option>
+                    <option value="SEM-2">2ème année SEM</option>
+                    <option value="SEM-3">3ème année SEM</option>
+                </optgroup>
+
+                <optgroup label="DSI">
+                    <option value="DSI-1">1ère année DSI</option>
+                    <option value="DSI-2">2ème année DSI</option>
+                    <option value="DSI-3">3ème année DSI</option>
+                </optgroup>
+
+                <optgroup label="RSI">
+                    <option value="RSI-1">1ère année RSI</option>
+                    <option value="RSI-2">2ème année RSI</option>
+                    <option value="RSI-3">3ème année RSI</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Valider l'inscription">
+            <input type="reset" value="Réinitialiser">
+        </p>
+
+    </form>
+
+</body>
+</html>
